@@ -24,7 +24,7 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
@@ -104,6 +104,7 @@ frame->data=
 
 
 ——————打印当前窗口状态完毕——————
+crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:1，确认ack为:1的数据帧
 <RECV0>:[Packet: 1]
 
@@ -121,12 +122,12 @@ frame->data=
 #frame--------
 
 窗口序号:[1]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
@@ -138,7 +139,7 @@ frame->data=Packet: 1
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -223,24 +224,24 @@ frame->data=
 #frame--------
 
 窗口序号:[1]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
 #frame--------
 
 窗口序号:[2]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -252,7 +253,7 @@ frame->data=Packet: 2
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -308,8 +309,7 @@ frame->data=
 
 
 ——————打印当前窗口状态完毕——————
-接收方receiver:0 从发送方sender:0获取序列号为seq:3，确认ack为:3的数据帧
-<RECV0>:[Packet: 3]
+crc wrong
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -330,7 +330,7 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
@@ -342,7 +342,7 @@ frame->data=Packet: 1
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -354,7 +354,7 @@ frame->data=Packet: 2
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -366,7 +366,7 @@ frame->data=Packet: 3
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -410,6 +410,9 @@ frame->data=
 
 
 ——————打印当前窗口状态完毕——————
+crc wrong
+接收方receiver:0 从发送方sender:0获取序列号为seq:3，确认ack为:3的数据帧
+<RECV0>:[Packet: 3]
 接收方receiver:0 从发送方sender:0获取序列号为seq:4，确认ack为:4的数据帧
 <RECV0>:[Packet: 4]
 
@@ -432,7 +435,7 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
@@ -444,7 +447,7 @@ frame->data=Packet: 1
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -456,7 +459,7 @@ frame->data=Packet: 2
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -468,7 +471,7 @@ frame->data=Packet: 3
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -480,7 +483,7 @@ frame->data=Packet: 4
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -512,6 +515,8 @@ frame->data=
 
 
 ——————打印当前窗口状态完毕——————
+接收方receiver:0 从发送方sender:0获取序列号为seq:5，确认ack为:5的数据帧
+<RECV0>:[Packet: 5]
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -532,7 +537,7 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
@@ -544,7 +549,7 @@ frame->data=Packet: 1
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -556,7 +561,7 @@ frame->data=Packet: 2
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -568,7 +573,7 @@ frame->data=Packet: 3
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -580,7 +585,7 @@ frame->data=Packet: 4
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -592,7 +597,7 @@ frame->data=Packet: 5
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -612,8 +617,6 @@ frame->data=
 
 
 ——————打印当前窗口状态完毕——————
-接收方receiver:0 从发送方sender:0获取序列号为seq:5，确认ack为:5的数据帧
-<RECV0>:[Packet: 5]
 接收方receiver:0 从发送方sender:0获取序列号为seq:6，确认ack为:6的数据帧
 <RECV0>:[Packet: 6]
 
@@ -636,7 +639,7 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
@@ -648,7 +651,7 @@ frame->data=Packet: 1
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -660,7 +663,7 @@ frame->data=Packet: 2
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -672,7 +675,7 @@ frame->data=Packet: 3
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -684,7 +687,7 @@ frame->data=Packet: 4
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -696,7 +699,7 @@ frame->data=Packet: 5
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -708,7 +711,7 @@ frame->data=Packet: 6
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -726,7 +729,7 @@ frame->data=Packet: 7
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -738,7 +741,7 @@ frame->data=Packet: 8
 
 frame:
 frame->id=1
-frame->CRC=57792
+frame->CRC=45266
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 1
@@ -750,7 +753,7 @@ frame->data=Packet: 1
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -762,7 +765,7 @@ frame->data=Packet: 2
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -774,7 +777,7 @@ frame->data=Packet: 3
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -786,7 +789,7 @@ frame->data=Packet: 4
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -798,7 +801,7 @@ frame->data=Packet: 5
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -810,7 +813,7 @@ frame->data=Packet: 6
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -828,7 +831,7 @@ frame->data=Packet: 7
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -840,7 +843,7 @@ frame->data=Packet: 8
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
@@ -852,7 +855,7 @@ frame->data=Packet: 9
 
 frame:
 frame->id=2
-frame->CRC=52044
+frame->CRC=34939
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 2
@@ -864,7 +867,7 @@ frame->data=Packet: 2
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -876,7 +879,7 @@ frame->data=Packet: 3
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -888,7 +891,7 @@ frame->data=Packet: 4
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -900,7 +903,7 @@ frame->data=Packet: 5
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -912,7 +915,7 @@ frame->data=Packet: 6
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -930,7 +933,7 @@ frame->data=Packet: 7
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -942,7 +945,7 @@ frame->data=Packet: 8
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
@@ -954,7 +957,7 @@ frame->data=Packet: 9
 
 frame:
 frame->id=10
-frame->CRC=43601
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
@@ -966,7 +969,7 @@ frame->data=Packet: 10
 
 frame:
 frame->id=3
-frame->CRC=20856
+frame->CRC=1250
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 3
@@ -978,7 +981,7 @@ frame->data=Packet: 3
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -990,7 +993,7 @@ frame->data=Packet: 4
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -1002,7 +1005,7 @@ frame->data=Packet: 5
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -1014,7 +1017,7 @@ frame->data=Packet: 6
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -1022,6 +1025,7 @@ frame->data=Packet: 7
 
 
 ——————打印当前窗口状态完毕——————
+crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:10，确认ack为:10的数据帧
 <RECV0>:[Packet: 10]
 
@@ -1032,7 +1036,7 @@ frame->data=Packet: 7
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -1044,19 +1048,20 @@ frame->data=Packet: 8
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
 #frame--------
 
 窗口序号:[2]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=10
-frame->CRC=43601
+crc wrong
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
@@ -1068,7 +1073,7 @@ frame->data=Packet: 10
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1080,7 +1085,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=4
-frame->CRC=64454
+frame->CRC=53023
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 4
@@ -1092,7 +1097,7 @@ frame->data=Packet: 4
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -1104,7 +1109,7 @@ frame->data=Packet: 5
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -1116,7 +1121,7 @@ frame->data=Packet: 6
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -1124,6 +1129,9 @@ frame->data=Packet: 7
 
 
 ——————打印当前窗口状态完毕——————
+接收方receiver:0 从发送方sender:0获取序列号为seq:11，确认ack为:11的数据帧
+<RECV0>:[Packet: 11]
+crc wrong
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -1132,7 +1140,7 @@ frame->data=Packet: 7
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -1144,7 +1152,7 @@ frame->data=Packet: 8
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
@@ -1156,19 +1164,19 @@ frame->data=Packet: 9
 
 frame:
 frame->id=10
-frame->CRC=43601
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
 #frame--------
 
 窗口序号:[3]
-是否ACK: 0
+是否ACK: 1
 帧内容:
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1180,7 +1188,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1192,7 +1200,7 @@ frame->data=Packet: 12
 
 frame:
 frame->id=5
-frame->CRC=9723
+frame->CRC=1935
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 5
@@ -1204,7 +1212,7 @@ frame->data=Packet: 5
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -1216,7 +1224,7 @@ frame->data=Packet: 6
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -1224,8 +1232,6 @@ frame->data=Packet: 7
 
 
 ——————打印当前窗口状态完毕——————
-接收方receiver:0 从发送方sender:0获取序列号为seq:11，确认ack为:11的数据帧
-<RECV0>:[Packet: 11]
 接收方receiver:0 从发送方sender:0获取序列号为seq:12，确认ack为:12的数据帧
 <RECV0>:[Packet: 12]
 
@@ -1236,7 +1242,7 @@ frame->data=Packet: 7
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -1248,7 +1254,7 @@ frame->data=Packet: 8
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
@@ -1260,7 +1266,7 @@ frame->data=Packet: 9
 
 frame:
 frame->id=10
-frame->CRC=43601
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
@@ -1272,7 +1278,7 @@ frame->data=Packet: 10
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1284,7 +1290,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1296,7 +1302,7 @@ frame->data=Packet: 12
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
@@ -1308,7 +1314,7 @@ frame->data=Packet: 13
 
 frame:
 frame->id=6
-frame->CRC=1983
+frame->CRC=7740
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 6
@@ -1320,7 +1326,7 @@ frame->data=Packet: 6
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -1338,7 +1344,7 @@ frame->data=Packet: 7
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -1350,7 +1356,7 @@ frame->data=Packet: 8
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
@@ -1362,7 +1368,7 @@ frame->data=Packet: 9
 
 frame:
 frame->id=10
-frame->CRC=43601
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
@@ -1374,7 +1380,7 @@ frame->data=Packet: 10
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1386,7 +1392,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1398,7 +1404,7 @@ frame->data=Packet: 12
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
@@ -1410,7 +1416,7 @@ frame->data=Packet: 13
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -1422,7 +1428,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=7
-frame->CRC=55682
+frame->CRC=27056
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 7
@@ -1430,9 +1436,9 @@ frame->data=Packet: 7
 
 
 ——————打印当前窗口状态完毕——————
-crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:14，确认ack为:14的数据帧
 <RECV0>:[Packet: 14]
+crc wrong
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -1441,7 +1447,7 @@ crc wrong
 
 frame:
 frame->id=8
-frame->CRC=29398
+frame->CRC=43475
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 8
@@ -1453,7 +1459,7 @@ frame->data=Packet: 8
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
@@ -1465,7 +1471,7 @@ frame->data=Packet: 9
 
 frame:
 frame->id=10
-frame->CRC=43601
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
@@ -1477,7 +1483,7 @@ frame->data=Packet: 10
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1489,7 +1495,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1501,19 +1507,19 @@ frame->data=Packet: 12
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
 #frame--------
 
 窗口序号:[6]
-是否ACK: 0
+是否ACK: 1
 帧内容:
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -1525,7 +1531,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -1543,7 +1549,7 @@ frame->data=Packet: 15
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
@@ -1555,7 +1561,7 @@ frame->data=Packet: 16
 
 frame:
 frame->id=9
-frame->CRC=44267
+frame->CRC=24899
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 9
@@ -1567,7 +1573,7 @@ frame->data=Packet: 9
 
 frame:
 frame->id=10
-frame->CRC=43601
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
@@ -1579,7 +1585,7 @@ frame->data=Packet: 10
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1591,7 +1597,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1603,7 +1609,7 @@ frame->data=Packet: 12
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
@@ -1615,7 +1621,7 @@ frame->data=Packet: 13
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -1627,7 +1633,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -1645,7 +1651,7 @@ frame->data=Packet: 15
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
@@ -1657,7 +1663,7 @@ frame->data=Packet: 16
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
@@ -1669,7 +1675,7 @@ frame->data=Packet: 17
 
 frame:
 frame->id=10
-frame->CRC=43601
+frame->CRC=944
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 10
@@ -1681,7 +1687,7 @@ frame->data=Packet: 10
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1693,7 +1699,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1705,7 +1711,7 @@ frame->data=Packet: 12
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
@@ -1717,7 +1723,7 @@ frame->data=Packet: 13
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -1729,7 +1735,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -1737,18 +1743,15 @@ frame->data=Packet: 15
 
 
 ——————打印当前窗口状态完毕——————
-接收方receiver:0 从发送方sender:0获取序列号为seq:1，确认ack为:1的数据帧
-<RECV0>:[Packet: 17]
-crc wrong
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
@@ -1760,7 +1763,7 @@ frame->data=Packet: 16
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
@@ -1772,7 +1775,7 @@ frame->data=Packet: 17
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -1784,7 +1787,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=11
-frame->CRC=19349
+frame->CRC=35618
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 11
@@ -1796,7 +1799,7 @@ frame->data=Packet: 11
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1808,7 +1811,7 @@ frame->data=Packet: 12
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
@@ -1820,7 +1823,7 @@ frame->data=Packet: 13
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -1832,7 +1835,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -1840,6 +1843,13 @@ frame->data=Packet: 15
 
 
 ——————打印当前窗口状态完毕——————
+crc wrong
+crc wrong
+crc wrong
+接收方receiver:0 从发送方sender:0获取序列号为seq:1，确认ack为:1的数据帧
+<RECV0>:[Packet: 17]
+接收方receiver:0 从发送方sender:0获取序列号为seq:2，确认ack为:2的数据帧
+<RECV0>:[Packet: 18]
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -1848,31 +1858,31 @@ frame->data=Packet: 15
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
 #frame--------
 
 窗口序号:[1]
-是否ACK: 0
+是否ACK: 1
 帧内容:
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
 #frame--------
 
 窗口序号:[2]
-是否ACK: 0
+是否ACK: 1
 帧内容:
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -1884,7 +1894,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -1896,7 +1906,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=12
-frame->CRC=24282
+frame->CRC=29911
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 12
@@ -1908,7 +1918,7 @@ frame->data=Packet: 12
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
@@ -1920,7 +1930,7 @@ frame->data=Packet: 13
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -1932,7 +1942,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -1941,6 +1951,8 @@ frame->data=Packet: 15
 
 ——————打印当前窗口状态完毕——————
 crc wrong
+接收方receiver:0 从发送方sender:0获取序列号为seq:3，确认ack为:3的数据帧
+<RECV0>:[Packet: 19]
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -1949,7 +1961,7 @@ crc wrong
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
@@ -1961,19 +1973,19 @@ frame->data=Packet: 16
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
 #frame--------
 
 窗口序号:[2]
-是否ACK: 0
+是否ACK: 1
 帧内容:
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -1985,7 +1997,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -1997,7 +2009,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2005,11 +2017,12 @@ frame->data=Packet: 20
 
 窗口序号:[5]
 是否ACK: 1
+crc wrong
 帧内容:
 
 frame:
 frame->id=13
-frame->CRC=48926
+frame->CRC=64581
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 13
@@ -2021,7 +2034,7 @@ frame->data=Packet: 13
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -2033,7 +2046,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -2041,10 +2054,6 @@ frame->data=Packet: 15
 
 
 ——————打印当前窗口状态完毕——————
-接收方receiver:0 从发送方sender:0获取序列号为seq:2，确认ack为:2的数据帧
-<RECV0>:[Packet: 18]
-接收方receiver:0 从发送方sender:0获取序列号为seq:3，确认ack为:3的数据帧
-<RECV0>:[Packet: 19]
 接收方receiver:0 从发送方sender:0获取序列号为seq:4，确认ack为:4的数据帧
 <RECV0>:[Packet: 20]
 
@@ -2055,7 +2064,7 @@ frame->data=Packet: 15
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
@@ -2067,7 +2076,7 @@ frame->data=Packet: 16
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
@@ -2079,7 +2088,7 @@ frame->data=Packet: 17
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -2091,7 +2100,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -2103,7 +2112,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2115,7 +2124,7 @@ frame->data=Packet: 20
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2127,7 +2136,7 @@ frame->data=Packet: 21
 
 frame:
 frame->id=14
-frame->CRC=60740
+frame->CRC=41470
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 14
@@ -2139,7 +2148,7 @@ frame->data=Packet: 14
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -2147,6 +2156,8 @@ frame->data=Packet: 15
 
 
 ——————打印当前窗口状态完毕——————
+crc wrong
+crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:5，确认ack为:5的数据帧
 <RECV0>:[Packet: 21]
 
@@ -2157,7 +2168,7 @@ frame->data=Packet: 15
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
@@ -2169,7 +2180,7 @@ frame->data=Packet: 16
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
@@ -2181,7 +2192,7 @@ frame->data=Packet: 17
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -2193,7 +2204,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -2205,7 +2216,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2217,7 +2228,7 @@ frame->data=Packet: 20
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2229,7 +2240,7 @@ frame->data=Packet: 21
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
@@ -2241,7 +2252,7 @@ frame->data=Packet: 22
 
 frame:
 frame->id=15
-frame->CRC=3200
+frame->CRC=10604
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 15
@@ -2259,7 +2270,7 @@ frame->data=Packet: 15
 
 frame:
 frame->id=0
-frame->CRC=63439
+frame->CRC=39449
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 16
@@ -2271,7 +2282,7 @@ frame->data=Packet: 16
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
@@ -2283,7 +2294,7 @@ frame->data=Packet: 17
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -2295,7 +2306,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -2307,7 +2318,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2319,7 +2330,7 @@ frame->data=Packet: 20
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2331,7 +2342,7 @@ frame->data=Packet: 21
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
@@ -2343,7 +2354,7 @@ frame->data=Packet: 22
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -2351,8 +2362,8 @@ frame->data=Packet: 23
 
 
 ——————打印当前窗口状态完毕——————
-crc wrong
-crc wrong
+接收方receiver:0 从发送方sender:0获取序列号为seq:7，确认ack为:7的数据帧
+<RECV0>:[Packet: 23]
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -2361,7 +2372,7 @@ crc wrong
 
 frame:
 frame->id=8
-frame->CRC=42432
+frame->CRC=38813
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 24
@@ -2373,7 +2384,7 @@ frame->data=Packet: 24
 
 frame:
 frame->id=1
-frame->CRC=5643
+frame->CRC=4747
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 17
@@ -2385,7 +2396,7 @@ frame->data=Packet: 17
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -2397,7 +2408,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -2409,7 +2420,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2421,7 +2432,7 @@ frame->data=Packet: 20
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2433,19 +2444,19 @@ frame->data=Packet: 21
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
 #frame--------
 
 窗口序号:[7]
-是否ACK: 0
+是否ACK: 1
 帧内容:
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -2453,19 +2464,15 @@ frame->data=Packet: 23
 
 
 ——————打印当前窗口状态完毕——————
-接收方receiver:0 从发送方sender:0获取序列号为seq:7，确认ack为:7的数据帧
-<RECV0>:[Packet: 23]
-接收方receiver:0 从发送方sender:0获取序列号为seq:8，确认ack为:8的数据帧
-<RECV0>:[Packet: 24]
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=8
-frame->CRC=42432
+frame->CRC=38813
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 24
@@ -2477,7 +2484,7 @@ frame->data=Packet: 24
 
 frame:
 frame->id=9
-frame->CRC=17412
+frame->CRC=7951
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 25
@@ -2489,7 +2496,7 @@ frame->data=Packet: 25
 
 frame:
 frame->id=2
-frame->CRC=9339
+frame->CRC=1839
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 18
@@ -2501,7 +2508,7 @@ frame->data=Packet: 18
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -2513,7 +2520,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2525,7 +2532,7 @@ frame->data=Packet: 20
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2537,7 +2544,7 @@ frame->data=Packet: 21
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
@@ -2549,7 +2556,7 @@ frame->data=Packet: 22
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -2557,6 +2564,9 @@ frame->data=Packet: 23
 
 
 ——————打印当前窗口状态完毕——————
+接收方receiver:0 从发送方sender:0获取序列号为seq:8，确认ack为:8的数据帧
+<RECV0>:[Packet: 24]
+crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:9，确认ack为:9的数据帧
 <RECV0>:[Packet: 25]
 
@@ -2567,19 +2577,19 @@ frame->data=Packet: 23
 
 frame:
 frame->id=8
-frame->CRC=42432
+frame->CRC=38813
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 24
 #frame--------
 
 窗口序号:[1]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=9
-frame->CRC=17412
+frame->CRC=7951
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 25
@@ -2591,7 +2601,7 @@ frame->data=Packet: 25
 
 frame:
 frame->id=10
-frame->CRC=9803
+frame->CRC=50874
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 26
@@ -2603,7 +2613,7 @@ frame->data=Packet: 26
 
 frame:
 frame->id=3
-frame->CRC=50623
+frame->CRC=36797
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 19
@@ -2615,7 +2625,7 @@ frame->data=Packet: 19
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2627,7 +2637,7 @@ frame->data=Packet: 20
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2639,7 +2649,7 @@ frame->data=Packet: 21
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
@@ -2651,7 +2661,7 @@ frame->data=Packet: 22
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -2669,7 +2679,7 @@ frame->data=Packet: 23
 
 frame:
 frame->id=8
-frame->CRC=42432
+frame->CRC=38813
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 24
@@ -2681,19 +2691,19 @@ frame->data=Packet: 24
 
 frame:
 frame->id=9
-frame->CRC=17412
+frame->CRC=7951
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 25
 #frame--------
 
 窗口序号:[2]
-是否ACK: 0
+是否ACK: 1
 帧内容:
 
 frame:
 frame->id=10
-frame->CRC=9803
+frame->CRC=50874
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 26
@@ -2705,7 +2715,7 @@ frame->data=Packet: 26
 
 frame:
 frame->id=11
-frame->CRC=51087
+frame->CRC=20008
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 27
@@ -2717,7 +2727,7 @@ frame->data=Packet: 27
 
 frame:
 frame->id=4
-frame->CRC=3285
+frame->CRC=31059
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 20
@@ -2729,7 +2739,7 @@ frame->data=Packet: 20
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2741,7 +2751,7 @@ frame->data=Packet: 21
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
@@ -2753,7 +2763,7 @@ frame->data=Packet: 22
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -2763,6 +2773,7 @@ frame->data=Packet: 23
 ——————打印当前窗口状态完毕——————
 接收方receiver:0 从发送方sender:0获取序列号为seq:11，确认ack为:11的数据帧
 <RECV0>:[Packet: 27]
+crc wrong
 
 ——————打印当前窗口状态——————
 窗口序号:[0]
@@ -2771,7 +2782,7 @@ frame->data=Packet: 23
 
 frame:
 frame->id=8
-frame->CRC=42432
+frame->CRC=38813
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 24
@@ -2783,7 +2794,7 @@ frame->data=Packet: 24
 
 frame:
 frame->id=9
-frame->CRC=17412
+frame->CRC=7951
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 25
@@ -2795,7 +2806,7 @@ frame->data=Packet: 25
 
 frame:
 frame->id=10
-frame->CRC=9803
+frame->CRC=50874
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 26
@@ -2807,7 +2818,7 @@ frame->data=Packet: 26
 
 frame:
 frame->id=11
-frame->CRC=51087
+frame->CRC=20008
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 27
@@ -2819,7 +2830,7 @@ frame->data=Packet: 27
 
 frame:
 frame->id=12
-frame->CRC=33535
+frame->CRC=32204
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 28
@@ -2831,7 +2842,7 @@ frame->data=Packet: 28
 
 frame:
 frame->id=5
-frame->CRC=60689
+frame->CRC=61889
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 21
@@ -2843,7 +2854,7 @@ frame->data=Packet: 21
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
@@ -2855,7 +2866,7 @@ frame->data=Packet: 22
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -2863,6 +2874,7 @@ frame->data=Packet: 23
 
 
 ——————打印当前窗口状态完毕——————
+crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:12，确认ack为:12的数据帧
 <RECV0>:[Packet: 28]
 
@@ -2873,7 +2885,7 @@ frame->data=Packet: 23
 
 frame:
 frame->id=8
-frame->CRC=42432
+frame->CRC=38813
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 24
@@ -2885,7 +2897,7 @@ frame->data=Packet: 24
 
 frame:
 frame->id=9
-frame->CRC=17412
+frame->CRC=7951
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 25
@@ -2897,7 +2909,7 @@ frame->data=Packet: 25
 
 frame:
 frame->id=10
-frame->CRC=9803
+frame->CRC=50874
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 26
@@ -2909,19 +2921,19 @@ frame->data=Packet: 26
 
 frame:
 frame->id=11
-frame->CRC=51087
+frame->CRC=20008
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 27
 #frame--------
 
 窗口序号:[4]
-是否ACK: 1
+是否ACK: 0
 帧内容:
 
 frame:
 frame->id=12
-frame->CRC=33535
+frame->CRC=32204
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 28
@@ -2933,7 +2945,7 @@ frame->data=Packet: 28
 
 frame:
 frame->id=13
-frame->CRC=25403
+frame->CRC=62814
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 29
@@ -2945,7 +2957,7 @@ frame->data=Packet: 29
 
 frame:
 frame->id=6
-frame->CRC=36702
+frame->CRC=10356
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 22
@@ -2957,7 +2969,7 @@ frame->data=Packet: 22
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -2965,6 +2977,7 @@ frame->data=Packet: 23
 
 
 ——————打印当前窗口状态完毕——————
+crc wrong
 crc wrong
 
 ——————打印当前窗口状态——————
@@ -2974,7 +2987,7 @@ crc wrong
 
 frame:
 frame->id=8
-frame->CRC=42432
+frame->CRC=38813
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 24
@@ -2986,7 +2999,7 @@ frame->data=Packet: 24
 
 frame:
 frame->id=9
-frame->CRC=17412
+frame->CRC=7951
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 25
@@ -2998,7 +3011,7 @@ frame->data=Packet: 25
 
 frame:
 frame->id=10
-frame->CRC=9803
+frame->CRC=50874
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 26
@@ -3010,7 +3023,7 @@ frame->data=Packet: 26
 
 frame:
 frame->id=11
-frame->CRC=51087
+frame->CRC=20008
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 27
@@ -3022,7 +3035,7 @@ frame->data=Packet: 27
 
 frame:
 frame->id=12
-frame->CRC=33535
+frame->CRC=32204
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 28
@@ -3034,7 +3047,7 @@ frame->data=Packet: 28
 
 frame:
 frame->id=13
-frame->CRC=25403
+frame->CRC=62814
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 29
@@ -3046,7 +3059,7 @@ frame->data=Packet: 29
 
 frame:
 frame->id=14
-frame->CRC=6824
+frame->CRC=59379
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 30
@@ -3058,7 +3071,7 @@ frame->data=Packet: 30
 
 frame:
 frame->id=7
-frame->CRC=28314
+frame->CRC=41190
 frame->dst_id=0
 frame->src_id=0
 frame->data=Packet: 23
@@ -3066,11 +3079,8 @@ frame->data=Packet: 23
 
 
 ——————打印当前窗口状态完毕——————
-crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:13，确认ack为:13的数据帧
 <RECV0>:[Packet: 29]
 crc wrong
 接收方receiver:0 从发送方sender:0获取序列号为seq:14，确认ack为:14的数据帧
 <RECV0>:[Packet: 30]
-crc wrong
-crc wrong

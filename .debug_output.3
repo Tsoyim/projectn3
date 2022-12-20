@@ -124,10 +124,10 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=8869
+frame->CRC=7554
 frame->dst_id=0
 frame->src_id=0
-frame->data=12345678#1@2345678#
+frame->data=12345678#1@2345678#2@
 #frame--------
 
 窗口序号:[2]
@@ -224,10 +224,10 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=8869
+frame->CRC=7554
 frame->dst_id=0
 frame->src_id=0
-frame->data=12345678#1@2345678#
+frame->data=12345678#1@2345678#2@
 #frame--------
 
 窗口序号:[2]
@@ -236,10 +236,10 @@ frame->data=12345678#1@2345678#
 
 frame:
 frame->id=2
-frame->CRC=61319
+frame->CRC=60287
 frame->dst_id=0
 frame->src_id=0
-frame->data=2@2345678#3@2345678
+frame->data=2345678#3@2345678#4@2
 #frame--------
 
 窗口序号:[3]
@@ -324,10 +324,10 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=8869
+frame->CRC=7554
 frame->dst_id=0
 frame->src_id=0
-frame->data=12345678#1@2345678#
+frame->data=12345678#1@2345678#2@
 #frame--------
 
 窗口序号:[2]
@@ -336,10 +336,10 @@ frame->data=12345678#1@2345678#
 
 frame:
 frame->id=2
-frame->CRC=61319
+frame->CRC=60287
 frame->dst_id=0
 frame->src_id=0
-frame->data=2@2345678#3@2345678
+frame->data=2345678#3@2345678#4@2
 #frame--------
 
 窗口序号:[3]
@@ -348,10 +348,10 @@ frame->data=2@2345678#3@2345678
 
 frame:
 frame->id=3
-frame->CRC=49595
+frame->CRC=10858
 frame->dst_id=0
 frame->src_id=0
-frame->data=#4@2345678#5@234567
+frame->data=345678#5@2345678#6@23
 #frame--------
 
 窗口序号:[4]
@@ -424,10 +424,10 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=8869
+frame->CRC=7554
 frame->dst_id=0
 frame->src_id=0
-frame->data=12345678#1@2345678#
+frame->data=12345678#1@2345678#2@
 #frame--------
 
 窗口序号:[2]
@@ -436,10 +436,10 @@ frame->data=12345678#1@2345678#
 
 frame:
 frame->id=2
-frame->CRC=61319
+frame->CRC=60287
 frame->dst_id=0
 frame->src_id=0
-frame->data=2@2345678#3@2345678
+frame->data=2345678#3@2345678#4@2
 #frame--------
 
 窗口序号:[3]
@@ -448,10 +448,10 @@ frame->data=2@2345678#3@2345678
 
 frame:
 frame->id=3
-frame->CRC=49595
+frame->CRC=10858
 frame->dst_id=0
 frame->src_id=0
-frame->data=#4@2345678#5@234567
+frame->data=345678#5@2345678#6@23
 #frame--------
 
 窗口序号:[4]
@@ -460,10 +460,10 @@ frame->data=#4@2345678#5@234567
 
 frame:
 frame->id=4
-frame->CRC=51227
+frame->CRC=37923
 frame->dst_id=0
 frame->src_id=0
-frame->data=8#6@2345678#7@23456
+frame->data=45678#7@2345678#8@234
 #frame--------
 
 窗口序号:[5]
@@ -524,10 +524,10 @@ frame->data=
 
 frame:
 frame->id=1
-frame->CRC=8869
+frame->CRC=7554
 frame->dst_id=0
 frame->src_id=0
-frame->data=12345678#1@2345678#
+frame->data=12345678#1@2345678#2@
 #frame--------
 
 窗口序号:[2]
@@ -536,10 +536,10 @@ frame->data=12345678#1@2345678#
 
 frame:
 frame->id=2
-frame->CRC=61319
+frame->CRC=60287
 frame->dst_id=0
 frame->src_id=0
-frame->data=2@2345678#3@2345678
+frame->data=2345678#3@2345678#4@2
 #frame--------
 
 窗口序号:[3]
@@ -548,10 +548,10 @@ frame->data=2@2345678#3@2345678
 
 frame:
 frame->id=3
-frame->CRC=49595
+frame->CRC=10858
 frame->dst_id=0
 frame->src_id=0
-frame->data=#4@2345678#5@234567
+frame->data=345678#5@2345678#6@23
 #frame--------
 
 窗口序号:[4]
@@ -560,10 +560,10 @@ frame->data=#4@2345678#5@234567
 
 frame:
 frame->id=4
-frame->CRC=51227
+frame->CRC=37923
 frame->dst_id=0
 frame->src_id=0
-frame->data=8#6@2345678#7@23456
+frame->data=45678#7@2345678#8@234
 #frame--------
 
 窗口序号:[5]
@@ -572,10 +572,10 @@ frame->data=8#6@2345678#7@23456
 
 frame:
 frame->id=5
-frame->CRC=34175
+frame->CRC=60474
 frame->dst_id=0
 frame->src_id=0
-frame->data=78#8@2345678#9
+frame->data=5678#9
 #frame--------
 
 窗口序号:[6]
@@ -605,12 +605,12 @@ frame->data=
 
 ——————打印当前窗口状态完毕——————
 接收方receiver:0 从发送方sender:0获取序列号为seq:1，确认ack为:1的数据帧
-<RECV0>:[12345678#1@2345678#]
+<RECV0>:[12345678#1@2345678#2@]
 接收方receiver:0 从发送方sender:0获取序列号为seq:2，确认ack为:2的数据帧
-<RECV0>:[2@2345678#3@2345678]
+<RECV0>:[2345678#3@2345678#4@2]
 接收方receiver:0 从发送方sender:0获取序列号为seq:3，确认ack为:3的数据帧
-<RECV0>:[#4@2345678#5@234567]
+<RECV0>:[345678#5@2345678#6@23]
 接收方receiver:0 从发送方sender:0获取序列号为seq:4，确认ack为:4的数据帧
-<RECV0>:[8#6@2345678#7@23456]
+<RECV0>:[45678#7@2345678#8@234]
 接收方receiver:0 从发送方sender:0获取序列号为seq:5，确认ack为:5的数据帧
-<RECV0>:[78#8@2345678#9]
+<RECV0>:[5678#9]

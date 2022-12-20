@@ -37,9 +37,9 @@ echo
 
 ## Test Case 5
 echo -n "Test case 5: Sending 10 packets (with corrupt probability of 20% and drop probability of 20%) and expecting receiver to print them out in order: "
-(sleep 0.5; for i in `seq 1 1500`; do echo "msg 0 0 Packet: $i"; sleep 0.1; done; sleep 5; echo "exit") | ./project3 -r 0.2 -c 0.2 -r 1 -s 1 > .output_1500 2> .debug_output_1500
+(sleep 0.5; for i in `seq 1 1000`; do echo "msg 0 0 Packet: $i"; sleep 0.1; done; sleep 5; echo "exit") | ./project3 -r 0.2 -c 0.2 -r 1 -s 1 > .output_1500 2> .debug_output_1500
 
-(for i in `seq 1 1500`; do echo "<RECV0>:[Packet: $i]"; done) > .expected_output_1500
+(for i in `seq 1 1000`; do echo "<RECV0>:[Packet: $i]"; done) > .expected_output_1500
 
 check_output 5
 

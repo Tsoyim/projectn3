@@ -114,22 +114,22 @@ void handle_incoming_msgs(Receiver * receiver,
             }
         }else{
             fprintf(stderr,"crc wrong\n");
-            // Frame *outgoing_frames = (Frame*)malloc(sizeof(Frame));//获得空间
-            // outgoing_frames->ack = (receiver->NFE + MAX_LEN)%(MAX_LEN+1);
-            // outgoing_frames->id = (receiver->NFE + MAX_LEN)%(MAX_LEN+1);
-            // outgoing_frames->src_id = receiver->recv_id;
-            // outgoing_frames->dst_id = inframe->src_id;
-            // //把位置置空
-            // receiver->r_Win[receiver->NFE%RWS].received = 0;
-            // //CRC校验码
-            // char * frame_char = convert_frame_to_char(outgoing_frames);
-            // uint16_t crc = getCRC16(frame_char,MAX_FRAME_SIZE-2);
-            // outgoing_frames->CRC = crc;
-            // free(frame_char);
+            Frame *outgoing_frames = (Frame*)malloc(sizeof(Frame));//获得空间
+            outgoing_frames->ack = receiver->lastACK;
+            outgoing_frames->id = receiver->lastACK;
+            outgoing_frames->src_id = receiver->recv_id;
+            outgoing_frames->dst_id = inframe->src_id;
+            //把位置置空
+            receiver->r_Win[receiver->NFE%RWS].received = 0;
+            //CRC校验码
+            char * frame_char = convert_frame_to_char(outgoing_frames);
+            uint16_t crc = getCRC16(frame_char,MAX_FRAME_SIZE-2);
+            outgoing_frames->CRC = crc;
+            free(frame_char);
 
-            // char *outgoint_charbuf = convert_frame_to_char(outgoing_frames);
-            // ll_append_node(outgoing_frames_head_ptr,outgoint_charbuf);
-            // free(outgoing_frames);//释放空间
+            char *outgoint_charbuf = convert_frame_to_char(outgoing_frames);
+            ll_append_node(outgoing_frames_head_ptr,outgoint_charbuf);
+            free(outgoing_frames);//释放空间
         }
         // fprintf(stderr,"接收者NFE：%d\r\n",receiver->NFE);
         

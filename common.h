@@ -19,19 +19,18 @@
 typedef unsigned char uchar_t;
 #define SWS 8//滑动窗口大小
 #define RWS 8//滑动窗口大小
-#define MAX_LEN 16//最大窗口长度
+#define MAX_LEN 16//序号长度，序号：0-15
 #define MAX_FRAME_SIZE 32
 
 //TODO: You should change this!
 //Remember, your frame can be AT MOST 32 bytes!
-#define FRAME_PAYLOAD_SIZE 20
+#define FRAME_PAYLOAD_SIZE 22
 //System configuration information
 
 struct Frame_t
 {
     uint16_t src_id;//源ID
     uint16_t dst_id;//目的ID
-    uint16_t is_end;//帧结束标识符
     uint16_t length;//数据长度
     uint8_t id;//帧ID（序号）
     uint8_t ack;//ACK序号
@@ -100,8 +99,8 @@ struct Receiver_t
     //补充的变量
     uint8_t NFE;//期待收到的帧序号
     uint8_t lastACK;//上一个帧结束的ACK的id
-    // Frame buffer[MAX_LEN];//缓冲区
-    Receiver_Windows r_Win[SWS];
+    // Frame buffer[MAX_LEN];
+    Receiver_Windows r_Win[SWS];//
 
 };
 

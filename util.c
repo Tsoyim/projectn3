@@ -146,18 +146,18 @@ Frame * convert_char_to_frame(char * char_buf)
     return frame;
 }
 
-Frame * copy_frame(Frame *inframe)
-{
-    //TODO: You should implement this as necessary
-    Frame * frame = (Frame *) malloc(sizeof(Frame));
-    memset(inframe,
-           0,
-           sizeof(char)*sizeof(Frame));
-    memcpy(frame, 
-           inframe,
-           sizeof(char)*sizeof(Frame));
-    return frame;
-}
+// Frame * copy_frame(Frame *inframe)
+// {
+//     //TODO: You should implement this as necessary
+//     Frame * frame = (Frame *) malloc(sizeof(Frame));
+//     memset(inframe,
+//            0,
+//            sizeof(char)*sizeof(Frame));
+//     memcpy(frame, 
+//            inframe,
+//            sizeof(char)*sizeof(Frame));
+//     return frame;
+// }
 
 
 //补充函数
