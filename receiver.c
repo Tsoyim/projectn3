@@ -10,6 +10,7 @@ void init_receiver(Receiver * receiver,
 {
     receiver->recv_id = id;
     receiver->input_framelist_head = NULL;
+    receiver->wait_framelist_head = NULL;
 
     receiver->NFE = 1;
     receiver->lastACK = 0;
@@ -83,7 +84,28 @@ void handle_incoming_msgs(Receiver * receiver,
                     // fprintf(stderr,"打印已接收的消息\n");
                     fprintf(stderr, "接收方receiver:%d 从发送方sender:%d获取序列号为seq:%d，确认ack为:%d的数据帧\n", receiver->recv_id,inframe->src_id,inframe->id,inframe->ack);
                     fprintf(stderr,"<RECV%d>:[%s]\n", receiver->recv_id, receiver->r_Win[receiver->NFE%RWS].frame->data);
-                    printf("<RECV%d>:[%s]\n", receiver->recv_id, receiver->r_Win[receiver->NFE%RWS].frame->data);
+                    if(receiver->r_Win[receiver->NFE%RWS].frame->is_end == 1){
+                        int wait_framelist_length = ll_get_length(receiver->wait_framelist_head);
+                        printf("<RECV%d>:[", receiver->recv_id);
+                        while(wait_framelist_length > 0){
+                            LLnode * wait_node = ll_pop_node(&receiver->wait_framelist_head);
+                            wait_framelist_length = ll_get_length(receiver->wait_framelist_head);
+                            char * wait_node_char = (char*) wait_node->value;
+                            Frame * wait_node_frame = convert_char_to_frame(wait_node_char);
+                            printf("%s",wait_node_frame->data);
+                            free(wait_node_char);
+                            free(wait_node_frame);
+                        }
+                        printf("%s]\n",receiver->r_Win[receiver->NFE%RWS].frame->data);
+                        
+                    }else{
+                        char * wait_char = convert_frame_to_char(receiver->r_Win[receiver->NFE%RWS].frame);
+                        ll_append_node(&receiver->wait_framelist_head,wait_char);
+                    }
+                    // fprintf(stderr, "接收方receiver:%d 从发送方sender:%d获取序列号为seq:%d，确认ack为:%d的数据帧\n", receiver->recv_id,inframe->src_id,inframe->id,inframe->ack);
+                    // fprintf(stderr,"<RECV%d>:[%s]\n", receiver->recv_id, receiver->r_Win[receiver->NFE%RWS].frame->data);
+                    // printf("<RECV%d>:[%s]\n", receiver->recv_id, receiver->r_Win[receiver->NFE%RWS].frame->data);
+                    
                     // fprintf(stderr,"打印完成\n");
                     //滑动窗口
                     

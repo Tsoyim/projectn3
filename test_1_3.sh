@@ -57,6 +57,9 @@ check_output 2
 echo -n "Test case 3: Sending long message and expecting sender to partition it out: "
 (sleep 0.5; echo "msg 0 0 12345678#1@2345678#2@2345678#3@2345678#4@2345678#5@2345678#6@2345678#7@2345678#8@2345678#9"; sleep 0.5; echo "exit") | ./project3 -r 1 -s 1 > .output.3 2> .debug_output.3
 
+
+
+
 echo
 cat .output.3
 echo

@@ -24,7 +24,7 @@ typedef unsigned char uchar_t;
 
 //TODO: You should change this!
 //Remember, your frame can be AT MOST 32 bytes!
-#define FRAME_PAYLOAD_SIZE 22
+#define FRAME_PAYLOAD_SIZE 20
 //System configuration information
 
 struct Frame_t
@@ -32,6 +32,7 @@ struct Frame_t
     uint16_t src_id;//源ID
     uint16_t dst_id;//目的ID
     uint16_t length;//数据长度
+    uint16_t is_end;//是否结束
     uint8_t id;//帧ID（序号）
     uint8_t ack;//ACK序号
     char data[FRAME_PAYLOAD_SIZE];
@@ -93,13 +94,14 @@ struct Receiver_t
     pthread_mutex_t buffer_mutex;
     pthread_cond_t buffer_cv;
     LLnode * input_framelist_head;
+    LLnode * wait_framelist_head;
     int recv_id;
 
 
     //补充的变量
     uint8_t NFE;//期待收到的帧序号
     uint8_t lastACK;//上一个帧结束的ACK的id
-    // Frame buffer[MAX_LEN];
+    Frame buffer[MAX_LEN];
     Receiver_Windows r_Win[SWS];//
 
 };

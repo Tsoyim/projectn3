@@ -167,8 +167,6 @@ void handle_input_cmds(Sender * sender,
                 ll_append_node(&sender->wait_cmdlist_head,(void*)wait_cmd);
                 
             }
-        
-        
         }
         else
         {
@@ -183,7 +181,8 @@ void handle_input_cmds(Sender * sender,
             outgoing_frame->src_id = outgoing_cmd->src_id;
             outgoing_frame->dst_id = outgoing_cmd->dst_id;
             outgoing_frame->id = sender->LFS;
-            
+            if(wait_cmdlist_length == 0) outgoing_frame->is_end = 1;
+            else outgoing_frame->is_end = 0;
             outgoing_frame->ack = sender->LFS;//发送者ACK无所谓
             outgoing_frame->length = strlen(outgoing_cmd->message);
             
